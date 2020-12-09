@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFS & DFS</title>
+
+    <!-- Controls Movement -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <!-- Create Map -->
+    <script type="text/javascript" src="./lib/bundle.js"></script>
+
+    <link rel="stylesheet" href="./maze.css">
+
+</head>
+<body>
+    <header>
+        <div class='header-container'>
+          <h2>BFS & DFS Graph Traversal</h2>
+          <div class='maze-container'>
+            <!-- <span id='maze-1'>MAZE 1</span>&nbsp;|&nbsp;
+            <span id='maze-2'>MAZE 2</span>&nbsp;|&nbsp;
+            <span id='maze-3'>MAZE 3</span> -->
+          </div>
+        </div>
+      </header>
+      <div class='bfs-dfs-container'>
+        <div class='bfs'>
+          Breadth-First Search<br>
+          <canvas id='bfs-graph'></canvas>
+        </div>
+        <div class='dfs'>
+          Depth-First Search<br>
+          <canvas id='dfs-graph'></canvas>
+        </div>
+      </div>
+      <div class='button-container'>
+          <label for="x-starting">Choose x start:</label>
+          <select name="x-starting" id="x-starting">
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+          </select>
+
+          <label for="x-ending">Choose x End:</label>
+          <select name="x-ending" id="x-ending">
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+          </select>
+        <!-- <input type="text" placeholder="Enter starting point at 1st row" id="x-starting" style="width: 200px;"> -->
+        <!-- <input type="text" placeholder="Enter ending point at last row" id="x-ending" style="width: 200px;"> -->
+        <!-- <input type="text" placeholder="Enter starting coordinate Y" id="y-starting"> -->
+        <!-- <input type="text" placeholder="Enter X value" id="x-value">
+        <input type="text" placeholder="Enter Y value" id="y-value"> -->
+        <button type="button" id="randomize" name="randomize">
+            <i>RANDOMIZE</i>
+        </button>
+        <button type="button" id="play" name="play">
+            <i>PLAY</i>
+        </button>
+        <button type="button" id="reset" name="reset" onclick="window.location.reload(true)">
+            <i>RESET</i>
+        </button>
+      </div>
+      <div>
+
+      </div>
+</body>
+</html>
